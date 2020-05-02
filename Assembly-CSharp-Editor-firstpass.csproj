@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CBF553B4-B685-D305-63C4-01CCC11E4FD8}</ProjectGuid>
+    <ProjectGuid>{B85FA1F4-C149-682E-566F-3536B73BFEDC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
@@ -69,40 +69,40 @@
     <Compile Include="Assets\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
     <Compile Include="Assets\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/UnityEditors/2019.2.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -300,7 +300,7 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>D:/UnityProjects/AirShooter/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/UnityEditors/2019.2.15f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -659,7 +659,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{4D1B6581-3DD5-525E-FE6E-C58308249523}</Project>
+      <Project>{94FDCC4F-74D3-BF57-494F-67E088D025D9}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

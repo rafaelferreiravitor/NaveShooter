@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoadDelay: 1
-  DeathFX: {fileID: 0}
+  DeathFX: {fileID: 46336590680049683, guid: 90772f4ce57a9654e9dfdf14398c14f5, type: 3}
 --- !u!114 &615960099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +162,8 @@ MonoBehaviour:
   positionYawFactor: 6.5
   controlRollFactor: -30
   pitchFactor: -5
+  Guns:
+  - {fileID: 1239680684}
 --- !u!1001 &6629924396822474200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -169,6 +171,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2845715589625205434}
     m_Modifications:
+    - target: {fileID: 6629924398053239561, guid: ad5a98ecc168d0c408f2883567a3d4e3,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629924398053239561, guid: ad5a98ecc168d0c408f2883567a3d4e3,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6629924398053239561, guid: ad5a98ecc168d0c408f2883567a3d4e3,
         type: 3}
       propertyPath: CollisionModule.enabled
@@ -246,6 +258,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad5a98ecc168d0c408f2883567a3d4e3, type: 3}
+--- !u!1 &1239680684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6629924398053239668, guid: ad5a98ecc168d0c408f2883567a3d4e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 6629924396822474200}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1239680723 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6629924398053239563, guid: ad5a98ecc168d0c408f2883567a3d4e3,

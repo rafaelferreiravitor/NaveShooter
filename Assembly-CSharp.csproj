@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BCD1DC11-51C7-02A6-972B-1CAFB951E1D9}</ProjectGuid>
+    <ProjectGuid>{7E05AF37-6746-8943-911F-D939B7A14D5F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -83,34 +83,34 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/UnityProjects/AirShooter/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/UnityProjects/NaveShooter/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/UnityEditors/2019.2.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -646,7 +646,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{4D1B6581-3DD5-525E-FE6E-C58308249523}</Project>
+      <Project>{94FDCC4F-74D3-BF57-494F-67E088D025D9}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

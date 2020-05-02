@@ -30,14 +30,32 @@ public class PlayerController : MonoBehaviour
 
     bool isControllEnable = true;
 
+    [Header ("Guns settings")]
+    [SerializeField] private GameObject[] Guns;
+    private List<ParticleSystem> ParticleGun = new List<ParticleSystem>();
+
+    private void Start()
+    {
+        
+        foreach (var item in Guns)
+        {
+            ParticleGun.Add(item.GetComponent<ParticleSystem>());
+        }
+         
+    }
+
     private void Awake()
     {
         inputActions = new Control();
         inputActions.ActionMap.Move.performed += ctx => movementInput = ctx.ReadValue<Vector2>();
+        inputActions.ActionMap.Fire.performed += ctx => Shoot(ctx.ReadValueAsButton());
+
     }
+
 
     public void Update()
     {
+        
         Move();
     }
 
@@ -49,6 +67,20 @@ public class PlayerController : MonoBehaviour
             ProcessRotation();
         }
 
+    }
+
+    private void Shoot(bool shoot)
+    {
+        foreach (var item in ParticleGun)
+        {
+            var main = item.main;
+            main.loop = shoot;
+            if (shoot)
+                item.Play();
+            else
+                item.Stop();
+        }
+        
     }
 
     public void OnPlayerDeath() // called by CollisionHandler

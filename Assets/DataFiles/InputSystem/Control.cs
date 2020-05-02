@@ -25,6 +25,14 @@ public class @Control : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Fire"",
+                    ""type"": ""Button"",
+                    ""id"": ""1afd309c-e973-4164-8d91-cc2dfba7d5cb"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -137,6 +145,17 @@ public class @Control : IInputActionCollection, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5eb20f67-ec7b-4436-a442-7eff04eac43b"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -146,6 +165,7 @@ public class @Control : IInputActionCollection, IDisposable
         // ActionMap
         m_ActionMap = asset.FindActionMap("ActionMap", throwIfNotFound: true);
         m_ActionMap_Move = m_ActionMap.FindAction("Move", throwIfNotFound: true);
+        m_ActionMap_Fire = m_ActionMap.FindAction("Fire", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -196,11 +216,13 @@ public class @Control : IInputActionCollection, IDisposable
     private readonly InputActionMap m_ActionMap;
     private IActionMapActions m_ActionMapActionsCallbackInterface;
     private readonly InputAction m_ActionMap_Move;
+    private readonly InputAction m_ActionMap_Fire;
     public struct ActionMapActions
     {
         private @Control m_Wrapper;
         public ActionMapActions(@Control wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_ActionMap_Move;
+        public InputAction @Fire => m_Wrapper.m_ActionMap_Fire;
         public InputActionMap Get() { return m_Wrapper.m_ActionMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -213,6 +235,9 @@ public class @Control : IInputActionCollection, IDisposable
                 @Move.started -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnMove;
+                @Fire.started -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnFire;
+                @Fire.performed -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnFire;
+                @Fire.canceled -= m_Wrapper.m_ActionMapActionsCallbackInterface.OnFire;
             }
             m_Wrapper.m_ActionMapActionsCallbackInterface = instance;
             if (instance != null)
@@ -220,6 +245,9 @@ public class @Control : IInputActionCollection, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
+                @Fire.started += instance.OnFire;
+                @Fire.performed += instance.OnFire;
+                @Fire.canceled += instance.OnFire;
             }
         }
     }
@@ -227,5 +255,6 @@ public class @Control : IInputActionCollection, IDisposable
     public interface IActionMapActions
     {
         void OnMove(InputAction.CallbackContext context);
+        void OnFire(InputAction.CallbackContext context);
     }
 }
