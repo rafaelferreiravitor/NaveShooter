@@ -73,12 +73,18 @@ public class PlayerController : MonoBehaviour
     {
         foreach (var item in ParticleGun)
         {
+            //Consider change to emission on and off;
+            //var aux = item.emission;
+            //aux.enabled = false;
             var main = item.main;
             main.loop = shoot;
             if (shoot)
+                //aux.enabled = true;
                 item.Play();
+
             else
                 item.Stop();
+                //aux.enabled = false;
         }
         
     }
