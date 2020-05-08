@@ -14,12 +14,25 @@ public class CollisonHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        StartDeathSequence();
+
+        SendMessage("SwitchControlState",false);
+
+        if(!other.CompareTag("TakeOffArea"))
+            StartDeathSequence();
+        
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("TakeOffArea"))
+        {
+            SendMessage("SwitchControlState",true);
+        }
     }
 
     private void StartDeathSequence()
     {
-        SendMessage("OnPlayerDeath");
+        SendMessage("SwitchControlState",false);
         Instantiate(DeathFX, transform.position, transform.rotation);
         //Destroy(gameObject);
         Invoke("ReloadScene", levelLoadDelay);

@@ -89,9 +89,9 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    public void OnPlayerDeath() // called by CollisionHandler
+    public void SwitchControlState(bool state) // called by CollisionHandler
     {
-        isControllEnable = false;
+        isControllEnable = state;
     }
 
     private void ProcessRotation()
