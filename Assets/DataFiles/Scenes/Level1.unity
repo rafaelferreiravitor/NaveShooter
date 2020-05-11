@@ -3963,6 +3963,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963194228}
     m_Modifications:
+    - target: {fileID: 615960103, guid: d59900f356deca142a7a22be2d6bdc21, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 615960104, guid: d59900f356deca142a7a22be2d6bdc21, type: 3}
       propertyPath: m_IsTrigger
       value: 1
